@@ -1,0 +1,94 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+    --Yellow: hsl(47, 88%, 63%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Kutunun içeriğini ve kenar boşluklarını kutu boyutuna dahil eder */
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: local("Figtree-VariableFont_wght.ttf"),
+         url("./assets/fonts/Figtree-VariableFont_wght.ttf") format('truetype');
+}
+
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    background-color: var(--White);
+    border: 1px solid var(--Gray-500); /* Arka plan rengi yerine değişken kullanımı */
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 0px var(--Gray-950); /* Arka plan rengi yerine değişken kullanımı */
+    width: 350px; /* Sabit genişlik belirleme */
+    margin: 0 auto; /* Merkeze hizalama */
+}
+
+.container div:nth-child(2) h1:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+
+}
+
+.container div:first-child img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.container div:nth-child(2) h2 {
+    background-color: var(--Yellow);
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 3px;
+    padding: 3px 9px;
+    margin: 1rem 0 1rem;
+}
+
+.container div:nth-child(2) p.publish {
+    margin-bottom: 1rem;
+    color: var(--Gray-950);
+}
+
+.container div:nth-child(2) h1 {
+    margin-bottom: 1rem;
+}
+
+
+
+.container div:nth-child(2) p {
+    color: var(--Gray-500);
+    margin-bottom: 2rem;
+}
+
+.container div:nth-child(2) ul {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+
+body {
+    background-color: var(--Yellow);
+    font-size: 16px;
+    padding: 5rem 1rem;
+    display: flex; /* Flexbox kullanımı */
+    flex-direction: column; /* Dikey hizalama */
+    align-items: center; /* Yatay merkezleme */
+    justify-content: center; /* Dikey merkezleme */
+    min-height: 100vh; /* Tam ekran yüksekliği */
+    margin: 0; /* Tarayıcı varsayılan marjinini sıfırlama */
+    font-family: "Figtree";
+}
